@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'order.dart';
+import 'topup.dart';
+import 'finish.dart';
+
 
 void main() {
-    runApp(const MainApp());
+    runApp(const HomePage());
 }
 
-class MainApp extends StatelessWidget {
-    const MainApp({super.key});
+class HomePage extends StatelessWidget {
+    const HomePage({super.key});
 
     @override
     Widget build(BuildContext context) {
@@ -38,31 +42,31 @@ class MainApp extends StatelessWidget {
                                         Container(
                                             margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                                             child: Column(
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                                Container(
-                                                    margin: const EdgeInsets.fromLTRB(0.0, 2.5, 0.0, 2.5),
-                                                    child: const Text('Lokasi kamu',
-                                                        style: TextStyle(
-                                                            fontSize: 12,
-                                                            color: Color(0xff7f8183),
-                                                            fontFamily: 'Poppins',
-                                                            fontWeight: FontWeight.w400
-                                                        )
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                    Container(
+                                                        margin: const EdgeInsets.fromLTRB(0.0, 2.5, 0.0, 2.5),
+                                                        child: const Text('Lokasi kamu',
+                                                            style: TextStyle(
+                                                                fontSize: 12,
+                                                                color: Color(0xff7f8183),
+                                                                fontFamily: 'Poppins',
+                                                                fontWeight: FontWeight.w400
+                                                            )
+                                                        ),
                                                     ),
-                                                ),
-                                                Container(
-                                                    margin: const EdgeInsets.fromLTRB(0.0, 2.5, 0.0, 2.5),
-                                                    child: const Text('Tasikmalaya, West Java',
-                                                        style: TextStyle(
-                                                            fontSize: 12,
-                                                            color: Color(0xff000000),
-                                                            fontFamily: 'Poppins',
-                                                            fontWeight: FontWeight.w400
-                                                        )
+                                                    Container(
+                                                        margin: const EdgeInsets.fromLTRB(0.0, 2.5, 0.0, 2.5),
+                                                        child: const Text('Tasikmalaya, West Java',
+                                                            style: TextStyle(
+                                                                fontSize: 12,
+                                                                color: Color(0xff000000),
+                                                                fontFamily: 'Poppins',
+                                                                fontWeight: FontWeight.w400
+                                                            )
+                                                        ),
                                                     ),
-                                                ),
                                                 ],
                                             ),
                                         ),
@@ -71,13 +75,37 @@ class MainApp extends StatelessWidget {
                             ),
                             // main 1
                             Container(
-                                margin: const EdgeInsets.fromLTRB(25.0, 25.0, 0.0, 50.0),
+                                margin: const EdgeInsets.fromLTRB(25.0, 25.0, 0.0, 0.0),
                                 child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: const [
                                         Text('Halo, Ilham!',
                                             style: TextStyle(
                                                 fontSize: 25,
+                                                color: Colors.black,
+                                                fontFamily: 'Poppins',
+                                                fontWeight: FontWeight.w600
+                                            )
+                                        ),
+                                    ],
+                                ),
+                            ),
+                            Container(
+                                margin: const EdgeInsets.fromLTRB(25.0, 15.0, 0.0, 50.0),
+                                child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: const [
+                                        Text('Wallet: Rp. ',
+                                            style: TextStyle(
+                                                fontSize: 18,
+                                                color: Colors.black,
+                                                fontFamily: 'Poppins',
+                                                fontWeight: FontWeight.w600
+                                            )
+                                        ),
+                                        Text('0',
+                                            style: TextStyle(
+                                                fontSize: 18,
                                                 color: Colors.black,
                                                 fontFamily: 'Poppins',
                                                 fontWeight: FontWeight.w600
@@ -102,7 +130,7 @@ class MainApp extends StatelessWidget {
                                                 Container(
                                                     margin: const EdgeInsets.fromLTRB(50.0, 5.0, 50.0, 5.0),
                                                     child: const Image(
-                                                        image: AssetImage("assets/img/ryo.png"),
+                                                        image: AssetImage("assets/img/homepage.jpg"),
                                                         fit: BoxFit.cover,
                                                         width: double.infinity,
                                                         alignment: Alignment.center,
@@ -217,7 +245,7 @@ class MainApp extends StatelessWidget {
                                                     ),
                                                 ),
                                                 Container(
-                                                    margin: const EdgeInsets.fromLTRB(5.0, 0.0, 50.0, 0.0),
+                                                    margin: const EdgeInsets.fromLTRB(50.0, 0.0, 50.0, 0.0),
                                                     child: Row(
                                                         mainAxisAlignment: MainAxisAlignment.start,
                                                         children: const [
@@ -309,7 +337,7 @@ class MainApp extends StatelessWidget {
                                                                             padding: const EdgeInsets.all(10),
                                                                             decoration: const BoxDecoration(
                                                                                 color: Colors.blue,
-                                                                                image: DecorationImage(image: AssetImage('assets/img/profilepict.png'), fit: BoxFit.cover)
+                                                                                image: DecorationImage(image: AssetImage('assets/img/berita1.jpeg'), fit: BoxFit.cover)
                                                                             ),
                                                                         ),
                                                                     ),
@@ -357,7 +385,7 @@ class MainApp extends StatelessWidget {
                                                                             padding: const EdgeInsets.all(10),
                                                                             decoration: const BoxDecoration(
                                                                                 color: Colors.blue,
-                                                                                image: DecorationImage(image: AssetImage('assets/img/profilepict.png'), fit: BoxFit.cover)
+                                                                                image: DecorationImage(image: AssetImage('assets/img/berita2.jpeg'), fit: BoxFit.cover)
                                                                             ),
                                                                         ),
                                                                     ),

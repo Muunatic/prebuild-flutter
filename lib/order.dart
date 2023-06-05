@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'topup.dart';
+import 'finish.dart';
+import 'homepage.dart';
 
 void main() {
-    runApp(const MainApp());
+    runApp(const OrderPage());
 }
 
-class MainApp extends StatelessWidget {
-    const MainApp({super.key});
+class OrderPage extends StatelessWidget {
+    const OrderPage({super.key});
 
     @override
     Widget build(BuildContext context) {
@@ -353,16 +356,20 @@ class MainApp extends StatelessWidget {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             children: [
-                                                // Positioned(
-                                                //     top: 100,
-                                                //     left: 0,
-                                                //     right: 0,
-                                                //     child: Container(
-                                                //         decoration: const BoxDecoration(
-                                                //             image: DecorationImage(image: AssetImage('assets/img/profilepict.png'), fit: BoxFit.fill)
-                                                //         ),
-                                                //     )
-                                                // ),
+                                                Container(
+                                                    margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                                                    height: 50,
+                                                    child: Stack(
+                                                        children: [
+                                                            Positioned(
+                                                                width: 50,
+                                                                bottom: 0,
+                                                                right: 20,
+                                                                child: Image.asset("assets/img/kardus.png", fit: BoxFit.contain),
+                                                            )
+                                                        ]
+                                                    ),
+                                                ),
                                                 Container(
                                                     margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
                                                     child: const Text('Total',
