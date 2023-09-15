@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
                                 child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: const [
-                                        Text('Halo, Ilham!',
+                                        Text('Halo, User!',
                                             style: TextStyle(
                                                 fontSize: 25,
                                                 color: Colors.black,
@@ -405,7 +405,7 @@ class HomePage extends StatelessWidget {
                                                                     width: 100,
                                                                     alignment: Alignment.topLeft,
                                                                     margin: const EdgeInsets.fromLTRB(10.0, 5.0, 0.0, 0.0),
-                                                                    child: const Text('Lorem Ipsum Ilham Wibu Dolor sit amet', 
+                                                                    child: const Text('Lorem Ipsum Dolor sit amet', 
                                                                         style: TextStyle(
                                                                             color: Colors.black,
                                                                             fontSize: 14,
